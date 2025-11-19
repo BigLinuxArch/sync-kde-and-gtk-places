@@ -1,0 +1,10 @@
+[Unit]
+Description=Sync from gtk places to KDE bookmarks
+ConditionUser=!root
+
+[Path]
+PathModified=%h/.config/gtk-3.0/bookmarks
+Unit=sync-gtk-to-kde-places.service
+
+[Install]
+WantedBy=default.target
